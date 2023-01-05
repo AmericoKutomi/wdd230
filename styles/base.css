@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap');
+
+:root {
+  /* site main colors */
+  --primary-color: #1f2c7ad0;
+  --secondary-color: #b38336;
+  --accent1-color: #80ffb0;
+  --accent2-color: #ae4dff;
+
+  /* site font(s) */
+  --heading-font: 'Roboto', sans-serif;
+  --navigation-font: 'Open Sans', sans-serif;
+  --paragraph-font: 'Lato', sans-serif;
+
+  /* other site colors */
+  --headline-color-on-white: #132b59;  /* headlines on a white background */ 
+  --headline-color-on-color: #132b59; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #132b59; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #132b59; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #ffc566;
+  --nav-link-color: #132b59;
+  --nav-background-color: #ae4dff;
+  --nav-hover-link-color: #132b59;
+  --nav-hover-background-color: #80ffb0;
+
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    font-family: var(--navigation-font);
+    font-size: 24px;
+}    
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.card ul {
+    text-align: left;
+    padding: 15px auto;
+}
+
