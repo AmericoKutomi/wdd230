@@ -5,4 +5,14 @@
         gap: 0px 15px;
     }
 
+    nav {
+        flex-direction: row;
+    }
+
+    nav img {
+        flex-basis: 48px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
 }
