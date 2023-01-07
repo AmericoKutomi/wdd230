@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed&display=swap');
+
+:root {
+
+  --blue-saphire: #2e677aff;    /* primary color */
+  --orange-red: #eb7131ff;      /* secondary color */
+
+  /* additional colors based on primary and secondary colors */
+  --lavender-web: #eeeeffff;    
+  --laurel-green: #9fb798ff;
+  --bistre: #342a21ff;
+  --gainsboro: #dddadaff;
+
+  /* colors for fonts */
+  --light-gray: #CCC9C9ff;
+  --davys-grey: #5d5d5dff;
+  --silver: #c2c2c2ff;  
+    
+  /* variables for colors from palette */
+  --primary-color: var(--blue-saphire);
+  --secondary-color: var(--orange-red);
+  --accent1-color: var(--lavender-web);
+  --accent2-color: var(--laurel-green);
+
+  /* values below to your chosen font(s) */
+  --heading-font: 'Merriweather', serif;
+  --paragraph-font: 'Roboto Condensed', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+  --headline-color-on-color: var(--accent1-color); /* headlines on a colored background */ 
+  --paragraph-color-on-white: var(--davys-grey); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--gainsboro); /* paragraph text on a colored background */ 
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: #2e677add;  /* primary-color with different saturation */
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: var(--accent2-color);
+}
+
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+ul, td, th {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  font-family: var(--paragraph-font);
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(8, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . . home home . . ."
+    ". . . . top . . ."
+/*    ". left . . left . right ." */
+    ". left line line left2 line2 right ."
+    "page2 page2 . page3 page3 . page4 page4";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.left2 {
+  grid-area: left2;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}  
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+.line {
+  grid-area: line;
+  border-top: 1px solid;
+}
+.line2 {
+    grid-area: line2;
+    border-top: 1px solid;
+}
+
+  
