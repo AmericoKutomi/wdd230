@@ -37,13 +37,60 @@ body {
 }
 
 nav {
+    margin: 0 auto;
     background-color: black;
     color: white;
+    
     font-family: var(--navigation-font);
     font-size: 24px;
     display: flex;
     flex-direction: column;
 }    
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    /* 
+    text-align: left;
+    transition: 0.5s; 
+    font-weight: 700;
+    font-size: clamp(1re, 2vmin, 1.5rem);
+    */
+}
+
+.navMenu::before {
+    content: "≡";
+    font-size: 2rem;
+}
+
+.navigation a:hover, .navigation a:active {
+    color: black;
+    background-color: white;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsive .navMenu::before {
+    content: "X";
+}
 
 nav img {
     display: block;

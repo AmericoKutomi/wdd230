@@ -1,18 +1,25 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 40em) {
     
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
     .menu {
         grid-template-columns: 1fr 1fr;
         gap: 0px 15px;
     }
 
-    nav {
-        flex-direction: row;
-    }
-
-    nav img {
-        flex-basis: 48px;
-        flex-grow: 0;
-        flex-shrink: 0;
-    }
-    
 }

@@ -20,9 +20,13 @@
 </head>
 <body>
     <nav>
-        <img src="images/hamburger.png" height="48" width="48" alt="hamburger menu">
-        <a href="https://www.linkedin.com/in/americo-kutomi-0a69181/">LinkedIn</a>
-        <a href="https://byui.edu/">BYU-Idaho</a>
+        <ul class="navigation">
+            <li><a class="navMenu" href="#"></a></li>
+            <!-- <img src="images/hamburger.png" height="48" width="48" alt="hamburger menu"> -->
+            <li><a href="https://www.linkedin.com/in/americo-kutomi-0a69181/">LinkedIn</a></li>
+            <li><a href="https://byui.edu/">BYU-Idaho</a></li>
+            <li><a id="modeButton" href="#">Dark Mode ☑️</a></li>
+        </ul>
     </nav>
     <header>
         <img class="foto" src="images/americo-pb.jpg" alt="Author's photograph">
@@ -62,5 +66,7 @@
         <p class="highlight" id="lastModified"></p>
     </footer>      
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>
