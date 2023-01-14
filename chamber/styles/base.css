@@ -8,13 +8,10 @@
   /* additional colors based on primary and secondary colors */
   --lavender-web: #eeeeffff;    
   --laurel-green: #9fb798ff;
-  --bistre: #342a21ff;
   --gainsboro: #dddadaff;
 
-  /* colors for fonts */
-  --light-gray: #CCC9C9ff;
+  /* extra colors for fonts */
   --davys-grey: #5d5d5dff;
-  --silver: #c2c2c2ff;  
     
   /* variables for colors from palette */
   --primary-color: var(--blue-saphire);
@@ -22,7 +19,7 @@
   --accent1-color: var(--lavender-web);
   --accent2-color: var(--laurel-green);
 
-  /* values below to your chosen font(s) */
+  /* values to chosen font(s) */
   --heading-font: 'Merriweather', serif;
   --paragraph-font: 'Roboto Condensed', sans-serif;
 
@@ -47,9 +44,20 @@ body {
     font-family: var(--paragraph-font);
 }
 
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    font-size: 2em;
+}
+
+section {
+    background-color: var(--accent2-color);
+}
 footer {
     background-color: var(--accent1-color);
 }
+
 nav {
     margin: 0 auto;
     background-color: black;
