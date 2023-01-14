@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed&display=swap');
+
+:root {
+
+  --blue-saphire: #2e677aff;    /* primary color */
+  --orange-red: #eb7131ff;      /* secondary color */
+
+  /* additional colors based on primary and secondary colors */
+  --lavender-web: #eeeeffff;    
+  --laurel-green: #9fb798ff;
+  --bistre: #342a21ff;
+  --gainsboro: #dddadaff;
+
+  /* colors for fonts */
+  --light-gray: #CCC9C9ff;
+  --davys-grey: #5d5d5dff;
+  --silver: #c2c2c2ff;  
+    
+  /* variables for colors from palette */
+  --primary-color: var(--blue-saphire);
+  --secondary-color: var(--orange-red);
+  --accent1-color: var(--lavender-web);
+  --accent2-color: var(--laurel-green);
+
+  /* values below to your chosen font(s) */
+  --heading-font: 'Merriweather', serif;
+  --paragraph-font: 'Roboto Condensed', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+  --headline-color-on-color: var(--accent1-color); /* headlines on a colored background */ 
+  --paragraph-color-on-white: var(--davys-grey); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--gainsboro); /* paragraph text on a colored background */ 
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: #2e677add;  /* primary-color with different saturation */
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: var(--accent2-color);
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+footer {
+    background-color: var(--accent1-color);
+}
+nav {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    
+    font-family: var(--navigation-font);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}    
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    /* 
+    text-align: left;
+    transition: 0.5s; 
+    font-weight: 700;
+    font-size: clamp(1re, 2vmin, 1.5rem);
+    */
+}
+
+.navMenu::before {
+    content: "≡";
+    font-size: 2rem;
+}
+
+.navigation a:hover, .navigation a:active {
+    color: black;
+    background-color: white;
+}
+
+.responsive li {
+    display: block;
+}
+
+.responsive .navMenu::before {
+    content: "X";
+}
+
+.heroImg {
+    max-width: 300px;
+}
