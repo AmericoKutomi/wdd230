@@ -45,6 +45,7 @@ nav {
     font-size: 24px;
     display: flex;
     flex-direction: column;
+    gap: 100px;
 }    
 
 .navigation {
@@ -66,12 +67,6 @@ nav {
     color: white;
     text-decoration: none;
     padding: 0.5rem;
-    /* 
-    text-align: left;
-    transition: 0.5s; 
-    font-weight: 700;
-    font-size: clamp(1re, 2vmin, 1.5rem);
-    */
 }
 
 .navMenu::before {
@@ -111,6 +106,11 @@ ul {
     list-style-type: none;
 }
 
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .card {
     border-style: solid;
     border-radius: 20px;
@@ -121,3 +121,36 @@ ul {
     padding: 15px;
 }
 
+.temple {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.templeImg {
+    width: 100%;
+}
+
+.templeLabel {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-style: solid;
+    padding: 1.5rem;
+    white-space: nowrap;
+    background: radial-gradient(#fff, #4d5b97);
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.foto {
+    width: auto;
+    max-height: 300px;
+}
+
+.visitCount {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}

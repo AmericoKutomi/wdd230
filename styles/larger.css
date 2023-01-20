@@ -19,7 +19,40 @@
 
     .menu {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 0px 15px;
     }
+
+    .learning {
+        grid-row: 1/3;
+    }
+
+    .project {
+        grid-row: 1/2;
+    }
+
+    .information {
+        grid-row: 2/3;
+    }
+
+    .temple {
+        position: relative;
+        margin: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .templeImage {
+        width: 100%;
+    }
+
+    .templeLabel {
+        position: absolute;
+        left: 100px;
+        top: 50px;
+        border-style: solid;
+        padding: 30px;
+    }
+    
 
 }
