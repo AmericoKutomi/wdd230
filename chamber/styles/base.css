@@ -58,7 +58,7 @@ section {
 footer {
     background-color: var(--accent1-color);
 
-    bottom: 0;
+    
     width: 100%;
 }
 
@@ -143,7 +143,7 @@ nav {
 
 /* Active/current link */
 .sidebar a.active {
-    background-color: #04AA6D;
+    background-color: #073122d2;
     color: white;
 }
 
