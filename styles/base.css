@@ -156,6 +156,12 @@ ul {
 	font-size: larger;
 }
 
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+
 /*----------- FORM --------------*/
 
 form {
