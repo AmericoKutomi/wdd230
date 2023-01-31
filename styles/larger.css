@@ -1,5 +1,10 @@
 @media only screen and (min-width: 40em) {
     
+    body {
+        max-width: 1200px; 
+        padding: 4em; 
+    }
+    
     .navigation {
         display: flex;
     }
@@ -39,20 +44,11 @@
         position: relative;
         margin: none;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    .templeImage {
-        width: 100%;
+    .foto {
+        width: 20%;
+        height: auto;
     }
-
-    .templeLabel {
-        position: absolute;
-        left: 100px;
-        top: 50px;
-        border-style: solid;
-        padding: 30px;
-    }
-    
-
 }

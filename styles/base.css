@@ -28,9 +28,9 @@
 }
 
 body {
-    max-width: 960px;
+    max-width: 960px; 
     margin: 0 auto;
-    padding: 4em;
+    /*padding: 4em; */
     font-size: 18px;
     text-align: center;
     font-family: var(--paragraph-font);
@@ -124,20 +124,21 @@ ul {
 .temple {
     position: relative;
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: auto;
+    object-fit: scale-down;
 }
 
-.templeImg {
+.templeImage {
     width: 100%;
+    height: auto;
 }
 
 .templeLabel {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    border-style: solid;
-    padding: 1.5rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    border-style: none;
+    padding: 1rem;
     white-space: nowrap;
     background: radial-gradient(#fff, #4d5b97);
     box-shadow: 0 0 3rem #fff;
@@ -145,8 +146,8 @@ ul {
 }
 
 .foto {
-    width: auto;
-    max-height: 300px;
+    width: 40%;
+    height: auto;
 }
 
 .visitCount {
@@ -154,3 +155,41 @@ ul {
 	font-weight: bolder;
 	font-size: larger;
 }
+
+/*----------- FORM --------------*/
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    columns: #555;
+    text-align: left;
+}
+
+#formmessage {
+	display: none;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #aa3333;
+	color: #fff;
+	padding: 0.5rem;
+}
+

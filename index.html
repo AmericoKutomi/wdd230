@@ -28,15 +28,15 @@
         </ul>
     </nav>
     <header>
-        <img class="foto" src="images/americo-pb-sm.webp" alt="Author's photograph" loading="lazy">
+        <img class="foto" src="images/americo-pb-sm.webp" alt="Author's photograph" loading="lazy" width="400" height="600">
         <h1>Americo Sadao Kutomi</h1>
     </header>
     <main>
         <div class="temple">
             <picture>
+                <source media="(max-width: 600px)" srcset="images/brasilia-temple-sm.webp 1x">
                 <source media="(min-width: 960px)" srcset="images/brasilia-temple-md.webp 1x">
-                <source media="(min-width: 400px)" srcset="images/brasilia-temple-sm.webp 1x">
-                <img class="templeImage" src="images/brasilia-temple-lg.webp" alt="Brazilia Temple" loading="lazy">
+                <img class="templeImage" src="images/brasilia-temple-lg.webp" alt="Brazilia Temple" loading="lazy" width="800" height="600">
             </picture>
             <div class="templeLabel">
                 <p>Brazil Brasilia Temple</p>
@@ -85,6 +85,21 @@
         </div>
     </main>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2175.6007205244255!2d-46.732508307194614!3d-23.49976201242751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1674095839817!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form method="get">
+        <h3>Sign Up Form</h3>
+        <fieldset>
+            <legend>Your Information</legend>
+            <div id="formmessage"></div>
+            <label class="sbs">Name* <input type="text" name="fullname" required></label>
+            <label class="sbs">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="sbs">Rating [&nbsp;<span id="rating">5</span>&nbsp;] <input type="range" min="1" max="5" value="5" id="inputrating" name="rating" ></label>
+            <label class="sbs">User Name* <input type="password" id="username1" name="username1" pattern="(?=[^a-zA-Z0-9]+)[a-zA-Z0-9]*.{5,12}" title="at least one character not alphanumeric" required></label>
+            <label class="sbs">Repeat User Name* <input type="password" id="username2" name="username2" pattern="(?=[^[a-zA-Z0-9]])[a-zA-Z0-9].{5,12}" title="at least one character not alphanumeric" required></label>
+        </fieldset>
+        <input type="submit" value="Sign Up" class="submitBtn">
+    </form>
+
     <footer>
         <p>&copy; <a id="currentYear">20XX</a> - Americo Sadao Kutomi - Sao Paulo - Brazil</p>
         <p class="highlight" id="lastModified"></p>
@@ -93,5 +108,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visits.js"></script>
+    <script src="scripts/checkform.js"></script>
 </body>
 </html>
