@@ -35,27 +35,29 @@
         <!-- The sidebar -->
         <div class="sidebar">
             <a class="active" href="#events">Events</a>
-            <a href="#population">Population</a>
-            <a href="#area">Area</a>
-            <a href="#news">News</a>
+            <a href="#">Population</a>
+            <a href="#">Area</a>
+            <a href="#">News</a>
             <a><span class="label">Last visit: </span><span class="daysfromlastvisit"></span><span></span> day(s) ago</a>
         </div>
         
         <!-- Page content -->
         <div class="content">
+            <h1>Discover Page</h1>
+            <h2 id="events">Local Events</h2>
             <section class="eventcard">
                 <h3>Eastern Europe Cultural Fair</h3>
                 <picture>
-                    <source media="(min-width: 900px)" srcset="images/feira-cultural-leste-europeu.webp 1x">
-                    <source media="(min-width: 600px)" srcset="images/feira-cultural-leste-europeu-md.webp 1x">
-                    <img src="images/feira-cultural-leste-europeu-sm.webp" alt="Cultural Festival" loading="lazy" >
+                    <source media="(max-width: 600px)" srcset="images/feira-cultural-leste-europeu-sm.webp 1x">
+                    <source media="(max-width: 900px)" srcset="images/feira-cultural-leste-europeu-md.webp 1x">
+                    <img src="images/feira-cultural-leste-europeu.webp" alt="Cultural Festival" loading="lazy" width="600" height="800">
                 </picture>
             </section>
             <section class="eventcard">
                 <h3>FIPAN Businnes Event</h3>
                 <picture>
-                    <source media="(min-width: 900px)" srcset="images/fipan2023-lg.webp 1x" > 
-                    <img src="images/fipan2023-sm.webp" alt="FIPAN Businnes Event" loading="lazy" >
+                    <source media="(max-width: 600px)" srcset="images/fipan2023-sm.webp 1x" > 
+                    <img src="images/fipan2023-lg.webp" alt="FIPAN Businnes Event" loading="lazy" >
                 </picture>
             </section>
             <section class="eventcard">

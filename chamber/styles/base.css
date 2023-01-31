@@ -184,6 +184,7 @@ div.content {
 
 .eventcard img {
     width: 100%;
+    height: auto;
 }
 
 /*----------- FORM --------------*/
