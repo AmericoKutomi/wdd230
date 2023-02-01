@@ -190,10 +190,10 @@ div.content {
 /*----------- FORM --------------*/
 
 form fieldset {
-    margin: 2rem 0;
+    margin: 2rem 0; 
     border: 1px solid #445ba9;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem 1rem .5rem .5rem;
 }
 
 form legend {
@@ -216,7 +216,7 @@ form label.top input, form label.top select {
     font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
-    padding: .75rem;
+    padding: .75rem .2rem;
     color: #555;
     width: 100%;
     max-width: 20rem;
@@ -253,6 +253,8 @@ form .memo {
     height: 5rem;
 }
 
-section.benefits {
+/*----------- Membership Levels Benefits -----------*/
+
+.benefits {
     display: none;
 }

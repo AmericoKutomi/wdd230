@@ -26,26 +26,27 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     
     </header>
-    <main>
+    <main class="joinpage">
 
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Position <input type="text" name="businessposition" pattern="[A-Za-z- ]{6,}" title="At least six letters, no digits"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="myemail@gmail.com" required></label>
-                <label class="top">Cell Phone* <input type="tel" name="phone" required placeholder="11 999999999"></label>
-                <label class="top">Business Name / Title* <input type="text" name="businessname" required></label>
-            </fieldset>
+        <h1>Join Us</h1>
+        <div class="joinform">
+            <h2>Application Form</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position <input type="text" name="businessposition" pattern="[A-Za-z- ]{6,}" title="At least six letters, no digits"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="myemail@gmail.com" required></label>
+                    <label class="top">Cell Phone* <input type="tel" name="phone" required placeholder="11 999999999"></label>
+                    <label class="top">Business Name / Title* <input type="text" name="businessname" required></label>
+                </fieldset>
 
-            <div class="membership">
-                <section class="membershiplevel">  
                 <fieldset>
                     <div>Membership Level</div>
                     <label class="sbs"><input type="radio" name="membership" value="npmembership"> NP Membership is for non profit organizations and there is no fee</label>
@@ -53,47 +54,48 @@
                     <label class="sbs"><input type="radio" name="membership" value="silvermembership"> Silver Membership</label>
                     <label class="sbs"><input type="radio" name="membership" value="goldmembership"> Gold Membership</label>
                 </fieldset>
-                </section> 
-                <section class="benefits">
-                    <div>Membership Level Benefits</div>
-                    <div class="benefitcard">
-                        <p>NP Membership</p>
-                        <ul>
-                            <li>Events notification</li>
-                            <li>Discounts</li>
-                        </ul>
-                    </div>
-                    <div class="benefitcard">
-                        <p>Bronze Membership</p>
-                        <ul>
-                            <li>NP Membership Benefits</li>
-                            <li>Plus: One event ticket free</li>
-                        </ul>
-                    </div>
-                    <div class="benefitcard">
-                        <p>Silver Membership</p>
-                        <ul>
-                            <li>Bronze Membership Benefits</li>
-                            <li>Plus: Free advertisement in an event.</li>
-                        </ul>
-                    </div>
-                    <div class="benefitcard">
-                        <p>Gold Membership</p>
-                        <ul>
-                            <li>Bronze Membership Benefits</li>
-                            <li>Plus: Free advertisement in any event.</li>
-                        </ul>
-                    </div>
-                </section>
+
+                <fieldset>
+                    <label class="top">Business Description <input class="memo" type="text" name="businessdescription"></label>
+                    <label class="top"><input id="dateHidden" type="hidden" name="datetime"></label>
+                </fieldset>
+
+                <input type="submit" value="Join the Chamber" class="submitBtn">
+
+            </form>
+        </div>  
+
+        <div class="benefits">
+            <h2>Membership Level Benefits</h2>
+            <div class="benefitcard">
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>Events notification</li>
+                    <li>Discounts</li>
+                </ul>
             </div>
-            <fieldset>
-                <label class="top">Business Description <input class="memo" type="text" name="businessdescription"></label>
-                <label class="top"><input id="dateHidden" type="hidden" name="datetime"></label>
-            </fieldset>
-
-            <input type="submit" value="Join the Chamber" class="submitBtn">
-
-        </form>
+            <div class="benefitcard">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>NP Membership Benefits</li>
+                    <li>Plus: One event ticket free</li>
+                </ul>
+            </div>
+            <div class="benefitcard">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>Bronze Membership Benefits</li>
+                    <li>Plus: Free advertisement in an event.</li>
+                </ul>
+            </div>
+            <div class="benefitcard">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Bronze Membership Benefits</li>
+                    <li>Plus: Free advertisement in any event.</li>
+                </ul>
+            </div>
+        </div>
 
     </main>
     <footer>
