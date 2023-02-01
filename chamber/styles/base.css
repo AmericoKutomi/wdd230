@@ -229,7 +229,7 @@ form label.sbs {
     text-align: left;
     display: block;
     padding: .75rem 0;
-    columns: #555;
+    color: #555;
 }
 
 form input.submitBtn {
@@ -248,7 +248,7 @@ form label.top input:required {
 }
 
 form label.top input:required:valid {
-    border-left: greensolid 6px;
+    border-left: green solid 6px;
 }
 
 form .memo {
