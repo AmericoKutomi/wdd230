@@ -33,3 +33,27 @@ function checkSame() {
 		username2.style.color = "#000";
 	}
 }
+
+// show the table on submission
+
+const tableinfo = document.getElementById("tableinputdata");
+const namefield = document.getElementById("namefield");
+const emailfield = document.getElementById("emailfield");
+const ratingfield = document.getElementById("ratingfield");
+const usernamefield = document.getElementById("usernamefield");
+
+
+function getData() {
+	tableinfo.style.display = "table";
+	namefield.textContent = document.querySelector('[name="fullname"]').value;
+	emailfield.textContent = document.querySelector('[name="email"]').value;
+	ratingfield.textContent = document.querySelector('[name="rating"]').value;
+	usernamefield.textContent = document.querySelector('[name="username1"]').value;
+
+	return
+}
+  
+  document.getElementById("myform").addEventListener("submit", function (e) {
+	e.preventDefault();
+	getData();
+  });

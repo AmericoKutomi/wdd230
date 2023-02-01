@@ -199,3 +199,43 @@ form label.sbs {
 	padding: 0.5rem;
 }
 
+/*----------- TABLE --------------*/
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--borderlight);
+	box-shadow: 0 0 7px rgb(97, 27, 27);
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: top;
+	color: var(--back);
+	font-size: 1.85rem;
+}
+
+tr:first-child th {
+	background-color: var(--primary-color);
+	color: white;
+}
+
+th, td {
+	padding: 7px 15px;
+}
+
+th {
+	font-size: larger;
+}
+
+td {
+    text-align: left;
+}
+
+td:first-child {
+	text-align: right;
+}
+
+#tableinputdata {
+    display: none;
+}
