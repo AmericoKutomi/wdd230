@@ -1,0 +1,58 @@
+{
+    "newMembers" : [
+        {
+            "familyName" : "Silva",
+            "dateArrival" : "2022-10-30",
+            "numberOfMembers" : 2,
+            "visitedByBishopric" : true,
+            "members" : [
+            {
+                "name" : "Jose Tenorio Silva",
+                "gender" : "male",
+                "birthdate" : "1980-04-01"
+            },
+            {
+                "name" : "Maria Silva",
+                "gender" : "female",
+                "birthdate" : "1979-12-01"
+            }
+            ]
+        },
+        {
+            "familyName" : "Souza",
+            "dateArrival" : "2022-11-20",
+            "numberOfMembers" : 3,
+            "visitedByBishopric" : true,
+            "members" : [
+                {
+                "name" : "Felipe Souza",
+                "gender" : "male",
+                "birthdate" : "1960-07-17"
+                },
+                {
+                "name" : "Teresa Souza",
+                "gender" : "female",
+                "birthdate" : "1970-08-13"
+                },
+                {
+                    "name" : "Felipe Souza Jr.",
+                    "gender" : "male",
+                    "birthdate" : "2000-01-11"
+                }
+                ]
+        },
+        {
+            "familyName" : "Santos",
+            "dateArrival" : "2022-10-30",
+            "numberOfMembers" : 1,
+            "visitedByBishopric" : false,
+            "members" : [
+                {
+                "name" : "Cristina Kelly Santos",
+                "gender" : "female",
+                "birthdate" : "1990-06-25"
+                }
+            ]
+        }    
+    ]
+}
