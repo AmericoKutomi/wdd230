@@ -239,3 +239,9 @@ td:first-child {
 #tableinputdata {
     display: none;
 }
+
+/*----------- Dynamic Week Links ------------*/
+
+.linklearning {
+    display: block;
+}

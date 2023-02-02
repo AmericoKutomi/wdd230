@@ -1,7 +1,95 @@
 {
-    "week01" : ["chamber-site-plan.html", "holygrail.html", "media-query.html"],
-    "week02" : ["bom.html","design.html","https://codepen.io/AmericoKutomi/pen/zYLwPrp"],
-    "week03" : ["bom.html", "lazyload.html", "week03/images/landscape.webp"],
-    "week04" : ["tablebuild.html"],
-    "week05" : ["prophets.html", "weather.html"]
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/AmericoKutomi/pen/zYLwPrp",
+                    "title": "Responsive Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Book of Mormon Top 10"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load Demonstration"
+                },
+                {
+                    "url": "https://codepen.io/AmericoKutomi/pen/RwBLBJB?editors=1100",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Book of Mormon Top 10 with Local Storage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/AmericoKutomi/pen/OJwQrZd",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "week04/images/combinators.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Demonstration"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/AmericoKutomi/pen/zYLMjOZ",
+                    "title": "Pseudo Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "New Members JSON"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+
+    ]
 }
+

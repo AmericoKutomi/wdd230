@@ -46,6 +46,9 @@
         <div class="menu">
             <section class="card learning">
                 <h3>Learning Activities</h3>
+                <div id="weeks">
+                </div>
+                <!--
                 <ul>
                     <li>Week 01: 
                         &nbsp; &nbsp; <a href="week01/media-query.html">Media Query</a> &nbsp; &nbsp; | 
@@ -73,6 +76,7 @@
                         &nbsp; &nbsp; <a href="week05/weather.html">Consuming a Weather API</a> &nbsp; &nbsp; |
                     <li>Week 06: <a></a></li>
                 </ul>
+                -->
             </section>
             <section class="card project">
                 <h3>Project</h3>
@@ -83,11 +87,13 @@
             </section>
             <section class="card information">
                 <h3>Information</h3>
+                <p><span class="label">Temperature: </span><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>          
                 <p><span class="label">Number of visits: </span><span class="visitCount"></span></p>
             </section>
-        </div>
-        <div id="dynamiclinks">
-
         </div>
     </main>
     <h2>My Location</h2>
@@ -145,6 +151,7 @@
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visits.js"></script>
     <script src="scripts/checkform.js"></script>
-    <script type="module" src="scripts/activities.js"></script>
+    <script src="scripts/activities.js"></script> 
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

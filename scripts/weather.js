@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('figcaption');
 
 // const appkey = 'abc30f2a434b15dd059569a0c7affd35';
 const appkey = '4007973eb69e6236f1e0f43d711191b1';
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,Germany&units=imperial&appid=' + appkey;
+const url = 'https://api.openweathermap.org/data/2.5/weather?id=3448439&units=imperial&appid=' + appkey;
 
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
