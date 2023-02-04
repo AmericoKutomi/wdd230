@@ -71,13 +71,13 @@
             "contact": "Anita Garibaldi"
         },
         {
-            "name": "Viação Santa Brigida",
-            "address": "Rua Waltrudes Correa, 100",
-            "phone": "11 4445-5550",
-            "website": "http://santabrigida.com.br/",
-            "image": "http://santabrigida.com.br/wp-content/uploads/2022/02/Sobre-nos.jpg",
+            "name": "Fitness Friends",
+            "address": "Rua Joaquim Oliveira de Freitas, 2343",
+            "phone": "11 3902-5550",
+            "website": "https://www.fitnessfriends.com.br/",
+            "image": "https://static.wixstatic.com/media/958243_458a9a42bbdb47ec96cc68dbfb47fc62~mv2_d_3253_1826_s_2.png/v1/fill/w_589,h_320,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20FF123-4.png", 
             "membershiplevel": "silver",
-            "businessdescription": "Public transport company in the region",
+            "businessdescription": "Gym, bodybuilding and swimming",
             "contact": "Tancredo Neves"
         }
     ]
