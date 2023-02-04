@@ -260,3 +260,167 @@ form .memo {
 .benefits {
     display: none;
 }
+
+/*----------  Directory --------------*/
+
+.directorymenu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #ddd; 
+	text-align: center;
+}
+
+.directorymenu button {
+	padding: 1rem;
+    font-size: 1em;
+/*
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+*/
+}
+
+#directoryarticle,
+.directorycard {
+	margin: 0.5rem;
+}
+
+.directorycard {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #ccc;
+}
+
+.directorygrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.directorygrid h3 {
+    grid-column: 1 /-1;
+}
+
+.directorygrid section {
+	flex-direction: column;
+	text-align: center;
+    height: 22em;
+    position: relative;
+}
+
+.directorygrid section > * {
+	margin: 0.1rem;
+}
+
+.directorygrid .companywebsite {
+    position: absolute;
+    bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.directorygrid .companycontact {
+    position: absolute;
+    bottom: 2rem;
+    text-align: left;
+}
+
+.directorygrid .companyphone {
+    position: absolute;
+    bottom: 3rem;
+    text-align: left;
+}
+
+.directorygrid .companyaddress {
+    position: absolute;
+    bottom: 4rem;
+    text-align: left;
+}
+
+.directorylist {
+	display: flex;
+	flex-direction: column;
+}
+
+.directorylist section {
+	display: grid;
+	grid-template-columns: 1fr 1fr .8fr 1fr .5fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.directorylist .businessdescription {
+    display: none;
+} 
+
+.directorylist section > * {
+	margin: 0 1rem;
+}
+
+.directorylist section img {
+	display: none; /* smaller viewports only */
+}
+
+.directorylist section h4 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.directorylist section:nth-child(even) {
+	background-color: #bed;
+}
+
+.directorycard h4 {
+	font-size: 1.2rem;
+}
+
+.directorycard h5 {
+	font-size: 1rem;
+}
+
+.directorycard p {
+	font-size: .8rem;
+}
+
+.directorycard a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: .8rem;
+}
+
+.directorycard img {
+	height: auto;
+    max-height: 12em;
+	width: 100%; 
+    margin-top: 1rem;
+}
+
+/* On screens that are less than 400px, display less columns */
+@media screen and (max-width: 400px) {
+    .directorylist section {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        margin: 0;
+        padding: 1rem;
+    }
+    .directorylist .companycontact {
+        display: none;
+    } 
+    .directorylist .companyphone {
+        display: none;
+    }    
+    .directorylist .companyaddress {
+        display: none;
+    }
+    .directorylist .companyname {
+        font-size: .8rem;
+        grid-column: 1 / 2;
+    } 
+    .directorylist .companywebsite {
+        font-size: .8rem;
+        grid-column: 2 / 3;
+    } 
+}      
+
+

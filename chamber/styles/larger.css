@@ -62,4 +62,13 @@
     .benefitcard ul {
         text-align: left;
     }
+
+    .directorylist section {
+        display: grid;
+        grid-template-columns: 1fr 1fr .8fr 1fr .5fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+
 }

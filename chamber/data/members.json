@@ -1,0 +1,84 @@
+{
+    "companies": [
+        {
+            "name": "Padaria City America",
+            "address": "Rua Waltrudes Correa, 100",
+            "phone": "11 88880-5550",
+            "website": "https://padariacityamerica.com.br/",
+            "image": "https://padariacityamerica.com.br/wp-content/uploads/2017/06/02-City-America_Logo_site.png",
+            "membershiplevel": "silver",
+            "businessdescription": "Neighborhood bakery with other conveniences",
+            "contact": "Jose Bonifacio"
+        },
+        {
+            "name": "Metalurgica Mauser",
+            "address": "Av. Agenor Couto de Magalhaes, 661",
+            "phone": "11 3909-5550",
+            "website": "https://www.mauser.com.br/",
+            "image": "https://www.mauser.com.br/img/foto-mauser.jpg",
+            "membershiplevel": "silver",
+            "businessdescription": "Brazilian manufacturer of components and electrical systems aimed at the automotive industry",
+            "contact": "Pedro Alvares Cabral"
+        },
+        {
+            "name": "Nakajyma Sushi",
+            "address": "Avenida Mutinga, 283",
+            "phone": "11 2478-5550",
+            "website": "https://nakajymasushi.com.br/unidade-mutinga/",
+            "image": "https://nakajymasushi.com.br/wp-content/uploads/2021/08/logo-nakajyma.png",
+            "membershiplevel": "gold",
+            "businessdescription": "Japanese food restaurant",
+            "contact": "Dom Pedro"
+        },
+        {
+            "name": "Lavanderia Branca Pura",
+            "address": "Rua Brigadeiro Henrique Fontenelle 344",
+            "phone": "11 3833-5550",
+            "website": "https://lavanderiabrancapura.com.br/",
+            "image": "https://lavanderiabrancapura.com.br/templates/default/images/imgs/logo-lavanderia-branca-pura.png",
+            "membershiplevel": "bronze",
+            "businessdescription": "Laundry and specialized washing.",
+            "contact": "Joana Darc"
+        },
+        {
+            "name": "Hub Zero 11",
+            "address": "R. Banibas, 266",
+            "phone": "11 96345-5550",
+            "website": "https://www.hubzero11.com.br/",
+            "image": "https://static.wixstatic.com/media/dac6ec_3167fc8a876e48009c7e0bdacb4b8f50~mv2.png/v1/crop/x_578,y_536,w_1384,h_1313/fill/w_92,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/dac6ec_3167fc8a876e48009c7e0bdacb4b8f50~mv2.png",
+            "membershiplevel": "gold",
+            "businessdescription": "Space for corporate or family events",
+            "contact": "Joaquim Jose Tiradentes"
+        },
+        {
+            "name": "Faculdade Anhanguera",
+            "address": "Av Raimundo Pereira de Magalhaes, 3305",
+            "phone": "11 3512-5550",
+            "website": "https://www.anhanguera.com/",
+            "image": "https://agenda-open-site.s3.sa-east-1.amazonaws.com/uploads/f2d2e41b90621620822953cf8b85da9e_3.jpg",
+            "membershiplevel": "gold",
+            "businessdescription": "Higher Education Institution",
+            "contact": "Castro Alves"
+        },
+        {
+            "name": "Tiete Plaza Shopping",
+            "address": "Av. Raimundo Pereira de Magalhães, 1465",
+            "phone": "11 3201-5550",
+            "website": "https://www.onstores.com.br/tiete-plaza-shopping/os",
+            "image": "https://s3.amazonaws.com/onstores-cms-codeby/uploads/shop/logo/36/MicrosoftTeams-image__133_.png",
+            "membershiplevel": "gold",
+            "businessdescription": "Largest mall in the region",
+            "contact": "Anita Garibaldi"
+        },
+        {
+            "name": "Viação Santa Brigida",
+            "address": "Rua Waltrudes Correa, 100",
+            "phone": "11 4445-5550",
+            "website": "http://santabrigida.com.br/",
+            "image": "http://santabrigida.com.br/wp-content/uploads/2022/01/logo_header.jpg",
+            "membershiplevel": "silver",
+            "businessdescription": "Public transport company in the region",
+            "contact": "Tancredo Neves"
+        }
+    ]
+}

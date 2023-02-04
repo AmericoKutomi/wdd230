@@ -3,4 +3,7 @@ document.querySelector('#currentYear').textContent = currentDate.getFullYear();
 
 document.querySelector('#lastModified').textContent = 'Last Modification: ' + document.lastModified;
 
-document.querySelector('#dateHidden').valueAsDate = new Date();
+var dateInForm = document.querySelector('#dateHidden');
+if (dateInForm) {
+    dateInForm.valueAsDate = new Date();
+}

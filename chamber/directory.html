@@ -1,15 +1,11 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pirituba Chamber of Commerce Portal - WDD230 Class Project - Confirmation Join Page</title>
-    <meta name="description" content="WDD 230 Americo Sadao Kutomi - Pirituba Chamber of Commerce Portal - Demonstration Project - Confirmation Join Page">
+    <title>Pirituba Chamber of Commerce Portal - WDD230 Class Project - Directory Page</title>
+    <meta name="description" content="WDD 230 Americo Sadao Kutomi - Pirituba Chamber of Commerce Portal - Demonstration Project - Directory Page">
     <meta name="author" content="Americo Sadao Kutomi">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -21,7 +17,6 @@
     <meta property="og:url" content="https://americokutomi.github.io/wdd230/chamber" >
 
 </head>
-
 <body>
     <header>
 
@@ -37,9 +32,20 @@
     
     </header>
 
-    <main>
-        <h1>Pirituba Chamber of Commerce</h1>
-        <p>Thanks for joining the Chamber.</p>
+    <main class="directorypage">
+
+        <h1>Members of the Chamber</h1>
+        <h2>Meet those who participate in our chamber</h2>
+    
+        <div class="directorymenu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+
+        <article id="directoryarticle" class="directorygrid">
+            <h3>List of Members</h3>
+        </article>
+
     </main>
 
     <footer>
@@ -49,7 +55,7 @@
         <p class="highlight" id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/hamburger.js"></script> 
+    <script src="scripts/directory.js"></script>
 </body>
-
 </html>
