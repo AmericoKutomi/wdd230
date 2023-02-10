@@ -5,5 +5,5 @@ document.querySelector('#lastModified').textContent = 'Last Modification: ' + do
 
 var dateInForm = document.querySelector('#dateHidden');
 if (dateInForm) {
-    dateInForm.valueAsDate = new Date();
+    dateInForm.value = new Date();
 }
