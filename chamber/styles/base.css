@@ -286,10 +286,17 @@ form .memo {
 */
 }
 
-#directoryarticle,
-.directorycard {
+#directoryarticle {
 	margin: 0.5rem;
 }
+
+.companyadv {
+	height: auto;
+    /* max-height: 12em; */
+	width: 100%; 
+    margin-top: 1rem;
+}
+
 
 .directorycard {
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -395,7 +402,6 @@ form .memo {
 
 .directorycard img {
 	height: auto;
-    max-height: 12em;
 	width: 100%; 
     margin-top: 1rem;
 }
@@ -427,4 +433,43 @@ form .memo {
     } 
 }      
 
+/*---------- weather and forecast -----------*/
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr;
+}
 
+/*----------- silver and gold members ----------*/
+
+#advertisement-article h4 {
+	margin: 0.5rem;
+    grid-column: 1 /-1;
+}
+
+.advertisement {
+	margin: 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #ccc;
+}
+
+.advertisement h5 {
+	font-size: 1.2rem;
+}
+
+.advertisement img {
+	height: auto;
+	width: 100%; 
+}
+
+/*--------- Banner ------------*/
+
+#banner {
+    background-color: var(--accent2-color);
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+    margin: 10px auto;
+}

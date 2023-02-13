@@ -32,20 +32,37 @@
     
     </header>
     <main>
-        <!-- <img class="heroImg" src="images/pico-do-jaragua.jpeg" alt="Jaragua Peak and Pirituba aerial sight">  -->
+        <div id="banner">Mensagem do dia</div>
         <img class="heroImg" src="images/pirituba.jpg" alt="Pirituba sight from Jaragua Peak">
         <button onclick="location.href='join.html'" type="button">Join the Chamber</button>
         <h1>The Pirituba Chamber of Commerce</h1>
-        <h3>Here you participate in the sustainability of our neighborhood.</h3>
+        <h2>Here you participate in the sustainability of our neighborhood.</h2>
         <section class="currentEvents">
-            <h2>[The place to publish the current events - Under construction]</h2>
+            <h3>Current Events</h3>
+            <h4>Chamber of Commerce Carnival Celebration</h4>
+            <p>This year, the Carnival celebration will take place in the dining room of Padaria City America. Come all on the 20th, Monday, in the afternoon. Family activity: children are allowed as long as they are accompanied by their parents.</p>
         </section>
+
         <section class="weather">
-            <h2>[The place to publish the weather in Pirituba - Under construction]</h2>
+            <h3>Local Weather</h3>
+            <p><span class="label">Temperature: </span><span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="#" alt="The weather condition">
+                <figcaption></figcaption>
+            </figure>          
+            <p id="forecast">
+                <span id="first-day"></span> <span id="second-day"></span> <span id="third-day"></span>
+                <span id="first-temp"></span> <span id="second-temp"></span> <span id="third-temp"></span>
+            </p>
         </section>
+
         <section class="spotlights">
-            <h2>[The place to publish spotlights like advertisements - Under construction]</h2>
+            <h3>Our Members</h3>
+            <article id="advertisement-article">
+                <h4>Some Silver and Gold Members</h4>
+            </article>
         </section>
+
     </main>
     <footer>
         <p>&copy; <a id="currentYear">20XX</a> - Americo Sadao Kutomi - Sao Paulo - Brazil</p>
@@ -55,6 +72,9 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
-   
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/silvergold.js"></script>
+    <script src="scripts/banner.js"></script>
+
 </body>
 </html>

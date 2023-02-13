@@ -70,5 +70,9 @@
         padding: 0.25rem;
     }
 
+    #advertisement-article {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;    
+    }
 
 }
