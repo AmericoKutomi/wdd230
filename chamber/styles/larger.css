@@ -75,4 +75,16 @@
         grid-template-columns: 3fr 3fr 3fr;    
     }
 
+    #banner {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--secondary-color);
+        font-size: 2em;
+    }
+    
+
 }

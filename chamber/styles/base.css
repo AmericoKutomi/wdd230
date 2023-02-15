@@ -48,7 +48,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--secondary-color);
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 section {
@@ -278,12 +278,6 @@ form .memo {
 .directorymenu button {
 	padding: 1rem;
     font-size: 1em;
-/*
-
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--secondary-color);
-*/
 }
 
 #directoryarticle {
@@ -467,7 +461,7 @@ form .memo {
 
 #banner {
     background-color: var(--accent2-color);
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 10px;
     border-radius: 10px;
     font-style: italic;
