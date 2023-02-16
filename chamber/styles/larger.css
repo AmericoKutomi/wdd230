@@ -19,31 +19,31 @@
 
     #hero {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .heroImg {
         margin: 0 auto;
         max-width: 800px;
-        grid-column: 1/7;
-        grid-row: 1/6;
-    }
-
-    #joinbutton {
-        margin-top: 20px;
-        grid-row: 4/5;
-        grid-column: 5/6;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
     }
 
     #hometitle {
         grid-row: 1/2;
-        grid-column: 1/7;
+        grid-column: 1 / -1;
     }
 
     #homesubtitle {
         grid-row: 2/3;
-        grid-column: 1/7;
+        grid-column: 1 / -1;
+        /* top: -100px; */
+    }
+
+    #joinbutton {
+        margin: 10px auto;
+        top: -500px;
     }
 
     #localinformation {
@@ -147,7 +147,7 @@
         gap: 15px;
     }
 
-    .directorycard {
+    .directorygrid .directorycard {
         border-radius: 5px;
         box-shadow: 0 0 10px #333;
     }
