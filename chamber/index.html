@@ -33,29 +33,32 @@
     </header>
     <main>
         <div id="banner">Today's Message</div>
-        <img class="heroImg" src="images/pirituba.jpg" alt="Pirituba sight from Jaragua Peak">
-        <button onclick="location.href='join.html'" type="button">Join the Chamber</button>
-        <h1>The Pirituba Chamber of Commerce</h1>
-        <h2>Here you participate in the sustainability of our neighborhood.</h2>
-        <section class="currentEvents">
-            <h3>Current Events</h3>
-            <h4>Chamber of Commerce Carnival Celebration</h4>
-            <p>This year, the Carnival celebration will take place in the dining room of Padaria City America. Come all on the 20th, Monday, in the afternoon. Family activity: children are allowed as long as they are accompanied by their parents.</p>
-        </section>
+        <div id="hero">
+            <img class="heroImg" src="images/pirituba.jpg" alt="Pirituba sight from Jaragua Peak">
+            <button onclick="location.href='join.html'" type="button" id="joinbutton">Join</button>
+            <h1 id="hometitle">The Pirituba Chamber of Commerce</h1>
+            <h2 id="homesubtitle">Here you participate in the sustainability of our neighborhood.</h2>
+        </div>
+        <div id="localinformation">
+            <section class="currentevents">
+                <h3>Current Events</h3>
+                <h4>Chamber of Commerce Carnival Celebration</h4>
+                <p>This year, the Carnival celebration will take place in the dining room of Padaria City America. Come all on the 20th, Monday, in the afternoon. Family activity: children are allowed as long as they are accompanied by their parents.</p>
+            </section>
 
-        <section class="weather">
-            <h3>Local Weather</h3>
-            <p><span class="label">Temperature: </span><span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="#" alt="The weather condition">
-                <figcaption></figcaption>
-            </figure>          
-            <p id="forecast">
-                <span id="first-day"></span> <span id="second-day"></span> <span id="third-day"></span>
-                <span id="first-temp"></span> <span id="second-temp"></span> <span id="third-temp"></span>
-            </p>
-        </section>
-
+            <section class="weather">
+                <h3>Local Weather</h3>
+                <p><span class="label">Temperature: </span><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="The weather condition">
+                    <figcaption></figcaption>
+                </figure>          
+                <p id="forecast">
+                    <span id="first-day"></span> <span id="second-day"></span> <span id="third-day"></span>
+                    <span id="first-temp"></span> <span id="second-temp"></span> <span id="third-temp"></span>
+                </p>
+            </section>
+        </div>
         <section class="spotlights">
             <h3>Our Members</h3>
             <article id="advertisement-article">

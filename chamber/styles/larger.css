@@ -17,8 +17,55 @@
         display: none;
     }
 
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
     .heroImg {
+        margin: 0 auto;
         max-width: 800px;
+        grid-column: 1/7;
+        grid-row: 1/6;
+    }
+
+    #joinbutton {
+        margin-top: 20px;
+        grid-row: 4/5;
+        grid-column: 5/6;
+    }
+
+    #hometitle {
+        grid-row: 1/2;
+        grid-column: 1/7;
+    }
+
+    #homesubtitle {
+        grid-row: 2/3;
+        grid-column: 1/7;
+    }
+
+    #localinformation {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    #localinformation .currentevents {
+        grid-column: 1/2;
+    }
+
+    .currentevents p {
+        padding: 0px 30px 0px 30px;
+    }
+
+    #localinformation .forecast {
+        grid-column: 2/3;
+    }
+    
+    .eventcard h3 {
+        padding-top: 15px;
     }
 
     .eventcard img:hover {
@@ -57,10 +104,16 @@
         border-radius: 10px;
         margin: 10px;
         background-color: #9fb798ff;
+        box-shadow: 0 0 10px #333;
     }
 
     .benefitcard ul {
         text-align: left;
+        list-style: none;
+    }
+
+    .benefitcard li:before {
+        content: '✓ ';
     }
 
     .directorylist section {
@@ -75,6 +128,10 @@
         grid-template-columns: 3fr 3fr 3fr;    
     }
 
+    .advertisement {
+        box-shadow: 0 0 50px #333;
+    }
+
     #banner {
         font-size: 1.5em;
     }
@@ -86,5 +143,12 @@
         font-size: 2em;
     }
     
+    .directorygrid {
+        gap: 15px;
+    }
 
+    .directorycard {
+        border-radius: 5px;
+        box-shadow: 0 0 10px #333;
+    }
 }

@@ -10,7 +10,7 @@ const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?id=3448439&u
 const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?id=3448439&units=imperial&appid=' + appkey;
 
 function displayWeather(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -23,7 +23,7 @@ function displayWeather(data) {
       const weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
       const forecastDate = new Date(dt * 1000);
       dayElement.textContent = weekday[forecastDate.getDay()];
-      tempElement.innerHTML = `${temp}&deg;F`; 
+      tempElement.innerHTML = `${Math.round(temp)}&deg;F`; 
     }
     const forecastList = data.list;
     displayDay(forecastList[8].dt, forecastList[8].main.temp, document.querySelector('#first-day'), document.querySelector('#first-temp'));
